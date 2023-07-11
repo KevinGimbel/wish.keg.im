@@ -1,0 +1,20 @@
+{% extends "base.njk" %}
+
+{% block content %}
+    {% for item in wishlist %}
+        <article class="[ gr-auto ] product">
+            <h3>{{ item.name }}</h3>
+            {% if item.image %}
+            <header class="product-img">
+                <img src="{{ item.image }}" />
+            </header>
+            {% endif %}
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            {% for shop in item.buy_at %}
+                <li><a href="{{ shop.link }}" title="Bei {{ shop.vendor }} kaufen">{{ shop.vendor }}</a></li>
+            {% endfor %}
+            </ul>
+        </article>
+    {% endfor %}
+{% endblock %}

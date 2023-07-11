@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="favicon" rel="icon" href="img/favicon.png">
+  <title>Kevin's Wunschliste ✨</title>
+  <style>:root {
+    --stack-spacing: 2rem;
+    --color-accent: #34d399;
+    --color-accent-contrast: #f472b6;
+    --color-accent-contrast-light: #fce7f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font: 16px/1.65 system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+html {
+    background: var(--color-accent-contrast-light);
+    padding: 1rem;
+    border-top: .25rem solid var(--color-accent-contrast);
+}
+
+body {
+    background: #f1f1f1;
+}
+
+a {
+    color: var(--color-accent);
+    font-style: italic;
+    letter-spacing: .05rem;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--color-accent-contrast);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    background: #ecfdf5;
+    color: var(--color-accent);
+    padding: .25em .75em;
+}
+
+li a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.text-xs {
+    font-size: 90%;
+}
+
+.buy-at {
+    text-decoration: underline;
+    margin-bottom: .25rem;
+}
+
+.product {
+    margin: 1rem;
+    padding: 1rem;
+    background: #fff;
+}
+
+.product-img {
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.product-img img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.footer {
+    margin-top: var(--stack-spacing);
+    background: #ecfdf5;
+    border-top: .25rem solid var(--color-accent);
+    padding: 1rem;
+}
+
+/* GRID */
+
+.grid {
+    display: grid;
+}
+
+
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 1em;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.gr-auto {
+    grid-row: auto;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-columns, 3), 1fr);
+    grid-gap: var(--stack-spacing, 2rem);
+}</style>
+</head>
+<body>
+    <main class="main-grid">
+        
+    
+        <article class="[ gr-auto ] product">
+            <h3>ADOX Foto Termometer</h3>
+            
+            <header class="product-img">
+                <img src="img/adox-thermometer.jpeg" />
+            </header>
+            
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            
+                <li><a href="https://www.fotoimpex.de/shop/fotolabor/adox-thermometer-fuer-sw-und-farbe.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+            
+            </ul>
+        </article>
+    
+        <article class="[ gr-auto ] product">
+            <h3>Kodak Pro Image 100 (5 Pack)</h3>
+            
+            <header class="product-img">
+                <img src="img/kodak-pro-img.jpeg" />
+            </header>
+            
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            
+                <li><a href="https://www.fotoimpex.com/films/kodak-professional-pro-image-100-13536-pack-of-5.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+            
+            </ul>
+        </article>
+    
+        <article class="[ gr-auto ] product">
+            <h3>KAISER Faltflasche (1L)</h3>
+            
+            <header class="product-img">
+                <img src="img/kaiser-flasche.jpeg" />
+            </header>
+            
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            
+                <li><a href="https://www.fotoimpex.de/shop/fotolabor/kaiser-faltflasche-1000-ml.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+            
+            </ul>
+        </article>
+    
+        <article class="[ gr-auto ] product">
+            <h3>KAISER Film Clips</h3>
+            
+            <header class="product-img">
+                <img src="img/kaiser-filmclip.jpeg" />
+            </header>
+            
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            
+                <li><a href="https://www.fotoimpex.com/darkroom/kaiser-filmclips-pair-1x-with-weight-1x-without.html?pn=60" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+            
+            </ul>
+        </article>
+    
+        <article class="[ gr-auto ] product">
+            <h3>KAISER Film Wiper</h3>
+            
+            <header class="product-img">
+                <img src="img/film-wiper.jpeg" />
+            </header>
+            
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            
+                <li><a href="https://www.fotoimpex.com/darkroom/kaiser-film-wiper.html?pn=60" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+            
+            </ul>
+        </article>
+    
+        <article class="[ gr-auto ] product">
+            <h3>AP Film Retriever</h3>
+            
+            <header class="product-img">
+                <img src="img/AP_Filmrueckholer_2.jpg" />
+            </header>
+            
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            
+                <li><a href="https://www.fotoimpex.com/darkroom/ap-film-retriever.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+            
+            </ul>
+        </article>
+    
+        <article class="[ gr-auto ] product">
+            <h3>CINESTILL CS-Lite</h3>
+            
+            <header class="product-img">
+                <img src="img/cs-lite.jpeg" />
+            </header>
+            
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            
+                <li><a href="https://www.fotoimpex.com/cameras-accessories/cinestill-cs-lite.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+            
+            </ul>
+        </article>
+    
+        <article class="[ gr-auto ] product">
+            <h3>PATERSON Developing Tank</h3>
+            
+            <header class="product-img">
+                <img src="img/Paterson_Multi_Tank2.jpg" />
+            </header>
+            
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            
+                <li><a href="https://www.fotoimpex.com/darkroom/paterson-film-developing-tank-2x35mm-2-reels.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+            
+            </ul>
+        </article>
+    
+        <article class="[ gr-auto ] product">
+            <h3>CINESTILL Cs41 Entwickler</h3>
+            
+            <header class="product-img">
+                <img src="img/cs-c41.jpeg" />
+            </header>
+            
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            
+                <li><a href="https://www.fotoimpex.de/shop/fotochemie/cinestill-cs41-color-simplified-2-bad-kit-fuer-die-entwicklung-von-farbnegativfilme-c-41.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+            
+            </ul>
+        </article>
+    
+        <article class="[ gr-auto ] product">
+            <h3>Fotoimpex Gutschein</h3>
+            
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            
+                <li><a href="https://www.fotoimpex.com/gift-certificates/" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+            
+            </ul>
+        </article>
+    
+        <article class="[ gr-auto ] product">
+            <h3>Agfa APX 100</h3>
+            
+            <header class="product-img">
+                <img src="img/apx100.jpeg" />
+            </header>
+            
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            
+                <li><a href="https://www.fotoimpex.com/films/agfaphoto-apx-100-13536-35-mm-new.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+            
+                <li><a href="https://www.dm.de/agfaphoto-film-schwarz-weiss-iso-100-36-p4250255100444.html" title="Bei DM kaufen">DM</a></li>
+            
+            </ul>
+        </article>
+    
+
+    </main>
+    <footer id="footer" class="[ gr-auto ] footer">
+        <p>Favicon by <a href="https://thenounproject.com/rose-alice-design/">Alice Design</a> via <a href="https://thenounproject.com/icon/gift-4037931/">The Noun Project</a>. Product images &copy; by <a href="https://fotoimpex.com/">Fotoimpex</a>. <br>
+        Made with <a href="https://11ty.dev/">11ty</a> -- <a href="/imprint">Imprint</a></p>
+    </footer>
+</body>
+</html>

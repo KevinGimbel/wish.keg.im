@@ -103,6 +103,31 @@ module.exports = [
             }
         ]
     },
+    {
+        name: "Nintendo eShop Gutschein",
+        image: undefined,
+        buy_at: [
+            {
+                vendor: "Rewe"
+            },
+            {
+                vendor: "DM"
+            },
+            {
+                vendor: "Müller"
+            }
+        ]
+    },
+    {
+        name: "Lomo Life Book",
+        image: "img/lomo-life-book.png",
+        buy_at: [
+            {
+                vendor: "Lomography",
+                link: "https://shop.lomography.com/de/lomo-life-book"
+            }
+        ]
+    },
     // {
     //     name: "",
     //     image: "",

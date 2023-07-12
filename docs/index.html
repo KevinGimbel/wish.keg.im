@@ -9,6 +9,8 @@
   <style>:root {
     --stack-spacing: 2rem;
     --color-accent: #34d399;
+    --color-accent-light: #d1fae5;
+    --color-accent-dark: #064e3b;
     --color-accent-contrast: #f472b6;
     --color-accent-contrast-light: #fce7f3;
 }
@@ -77,18 +79,25 @@ li a {
 }
 
 .product-img {
-    width: 15rem;
     height: 15rem;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    margin: 1rem;
 }
 
 .product-img img {
     max-width: 100%;
     max-height: 100%;
     display: block;
+}
+
+.product-img.no-img {
+    background: var(--color-accent-light);
+    color: var(--color-accent-dark);
+    font-family: monospace;
+    font-weight: bold;
 }
 
 .footer {
@@ -108,10 +117,34 @@ li a {
 
 .main-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 1em;
     min-height: 100vh;
     padding: 1rem;
+}
+
+@media all and (min-width: 50rem) {
+    .main-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (min-width: 70rem) {
+    .main-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media all and (min-width: 80rem) {
+    .main-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media all and (min-width: 91rem) {
+    .main-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 .gr-auto {
@@ -130,163 +163,265 @@ li a {
     
         <article class="[ gr-auto ] product">
             <h3>ADOX Foto Termometer</h3>
+            <header class="product-img ">
             
-            <header class="product-img">
                 <img src="img/adox-thermometer.jpeg" />
-            </header>
             
+            </header>
             <p class="text-xs buy-at">Zu kaufen bei:</p>
             <ul>
             
-                <li><a href="https://www.fotoimpex.de/shop/fotolabor/adox-thermometer-fuer-sw-und-farbe.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+                <li>
+                    
+                        <a href="https://www.fotoimpex.de/shop/fotolabor/adox-thermometer-fuer-sw-und-farbe.html" title="Bei Fotoimpex kaufen">Fotoimpex</a>
+                    
+                </li>
             
             </ul>
         </article>
     
         <article class="[ gr-auto ] product">
             <h3>Kodak Pro Image 100 (5 Pack)</h3>
+            <header class="product-img ">
             
-            <header class="product-img">
                 <img src="img/kodak-pro-img.jpeg" />
-            </header>
             
+            </header>
             <p class="text-xs buy-at">Zu kaufen bei:</p>
             <ul>
             
-                <li><a href="https://www.fotoimpex.com/films/kodak-professional-pro-image-100-13536-pack-of-5.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+                <li>
+                    
+                        <a href="https://www.fotoimpex.com/films/kodak-professional-pro-image-100-13536-pack-of-5.html" title="Bei Fotoimpex kaufen">Fotoimpex</a>
+                    
+                </li>
             
             </ul>
         </article>
     
         <article class="[ gr-auto ] product">
             <h3>KAISER Faltflasche (1L)</h3>
+            <header class="product-img ">
             
-            <header class="product-img">
                 <img src="img/kaiser-flasche.jpeg" />
-            </header>
             
+            </header>
             <p class="text-xs buy-at">Zu kaufen bei:</p>
             <ul>
             
-                <li><a href="https://www.fotoimpex.de/shop/fotolabor/kaiser-faltflasche-1000-ml.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+                <li>
+                    
+                        <a href="https://www.fotoimpex.de/shop/fotolabor/kaiser-faltflasche-1000-ml.html" title="Bei Fotoimpex kaufen">Fotoimpex</a>
+                    
+                </li>
             
             </ul>
         </article>
     
         <article class="[ gr-auto ] product">
             <h3>KAISER Film Clips</h3>
+            <header class="product-img ">
             
-            <header class="product-img">
                 <img src="img/kaiser-filmclip.jpeg" />
-            </header>
             
+            </header>
             <p class="text-xs buy-at">Zu kaufen bei:</p>
             <ul>
             
-                <li><a href="https://www.fotoimpex.com/darkroom/kaiser-filmclips-pair-1x-with-weight-1x-without.html?pn=60" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+                <li>
+                    
+                        <a href="https://www.fotoimpex.com/darkroom/kaiser-filmclips-pair-1x-with-weight-1x-without.html?pn=60" title="Bei Fotoimpex kaufen">Fotoimpex</a>
+                    
+                </li>
             
             </ul>
         </article>
     
         <article class="[ gr-auto ] product">
             <h3>KAISER Film Wiper</h3>
+            <header class="product-img ">
             
-            <header class="product-img">
                 <img src="img/film-wiper.jpeg" />
-            </header>
             
+            </header>
             <p class="text-xs buy-at">Zu kaufen bei:</p>
             <ul>
             
-                <li><a href="https://www.fotoimpex.com/darkroom/kaiser-film-wiper.html?pn=60" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+                <li>
+                    
+                        <a href="https://www.fotoimpex.com/darkroom/kaiser-film-wiper.html?pn=60" title="Bei Fotoimpex kaufen">Fotoimpex</a>
+                    
+                </li>
             
             </ul>
         </article>
     
         <article class="[ gr-auto ] product">
             <h3>AP Film Retriever</h3>
+            <header class="product-img ">
             
-            <header class="product-img">
                 <img src="img/AP_Filmrueckholer_2.jpg" />
-            </header>
             
+            </header>
             <p class="text-xs buy-at">Zu kaufen bei:</p>
             <ul>
             
-                <li><a href="https://www.fotoimpex.com/darkroom/ap-film-retriever.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+                <li>
+                    
+                        <a href="https://www.fotoimpex.com/darkroom/ap-film-retriever.html" title="Bei Fotoimpex kaufen">Fotoimpex</a>
+                    
+                </li>
             
             </ul>
         </article>
     
         <article class="[ gr-auto ] product">
             <h3>CINESTILL CS-Lite</h3>
+            <header class="product-img ">
             
-            <header class="product-img">
                 <img src="img/cs-lite.jpeg" />
-            </header>
             
+            </header>
             <p class="text-xs buy-at">Zu kaufen bei:</p>
             <ul>
             
-                <li><a href="https://www.fotoimpex.com/cameras-accessories/cinestill-cs-lite.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+                <li>
+                    
+                        <a href="https://www.fotoimpex.com/cameras-accessories/cinestill-cs-lite.html" title="Bei Fotoimpex kaufen">Fotoimpex</a>
+                    
+                </li>
             
             </ul>
         </article>
     
         <article class="[ gr-auto ] product">
             <h3>PATERSON Developing Tank</h3>
+            <header class="product-img ">
             
-            <header class="product-img">
                 <img src="img/Paterson_Multi_Tank2.jpg" />
-            </header>
             
+            </header>
             <p class="text-xs buy-at">Zu kaufen bei:</p>
             <ul>
             
-                <li><a href="https://www.fotoimpex.com/darkroom/paterson-film-developing-tank-2x35mm-2-reels.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+                <li>
+                    
+                        <a href="https://www.fotoimpex.com/darkroom/paterson-film-developing-tank-2x35mm-2-reels.html" title="Bei Fotoimpex kaufen">Fotoimpex</a>
+                    
+                </li>
             
             </ul>
         </article>
     
         <article class="[ gr-auto ] product">
             <h3>CINESTILL Cs41 Entwickler</h3>
+            <header class="product-img ">
             
-            <header class="product-img">
                 <img src="img/cs-c41.jpeg" />
-            </header>
             
+            </header>
             <p class="text-xs buy-at">Zu kaufen bei:</p>
             <ul>
             
-                <li><a href="https://www.fotoimpex.de/shop/fotochemie/cinestill-cs41-color-simplified-2-bad-kit-fuer-die-entwicklung-von-farbnegativfilme-c-41.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+                <li>
+                    
+                        <a href="https://www.fotoimpex.de/shop/fotochemie/cinestill-cs41-color-simplified-2-bad-kit-fuer-die-entwicklung-von-farbnegativfilme-c-41.html" title="Bei Fotoimpex kaufen">Fotoimpex</a>
+                    
+                </li>
             
             </ul>
         </article>
     
         <article class="[ gr-auto ] product">
             <h3>Fotoimpex Gutschein</h3>
+            <header class="product-img no-img">
             
+                <div class="img-block">[ No Image ]</div>
+            
+            </header>
             <p class="text-xs buy-at">Zu kaufen bei:</p>
             <ul>
             
-                <li><a href="https://www.fotoimpex.com/gift-certificates/" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+                <li>
+                    
+                        <a href="https://www.fotoimpex.com/gift-certificates/" title="Bei Fotoimpex kaufen">Fotoimpex</a>
+                    
+                </li>
             
             </ul>
         </article>
     
         <article class="[ gr-auto ] product">
             <h3>Agfa APX 100</h3>
+            <header class="product-img ">
             
-            <header class="product-img">
                 <img src="img/apx100.jpeg" />
-            </header>
             
+            </header>
             <p class="text-xs buy-at">Zu kaufen bei:</p>
             <ul>
             
-                <li><a href="https://www.fotoimpex.com/films/agfaphoto-apx-100-13536-35-mm-new.html" title="Bei Fotoimpex kaufen">Fotoimpex</a></li>
+                <li>
+                    
+                        <a href="https://www.fotoimpex.com/films/agfaphoto-apx-100-13536-35-mm-new.html" title="Bei Fotoimpex kaufen">Fotoimpex</a>
+                    
+                </li>
             
-                <li><a href="https://www.dm.de/agfaphoto-film-schwarz-weiss-iso-100-36-p4250255100444.html" title="Bei DM kaufen">DM</a></li>
+                <li>
+                    
+                        <a href="https://www.dm.de/agfaphoto-film-schwarz-weiss-iso-100-36-p4250255100444.html" title="Bei DM kaufen">DM</a>
+                    
+                </li>
+            
+            </ul>
+        </article>
+    
+        <article class="[ gr-auto ] product">
+            <h3>Nintendo eShop Gutschein</h3>
+            <header class="product-img no-img">
+            
+                <div class="img-block">[ No Image ]</div>
+            
+            </header>
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            
+                <li>
+                    
+                        Rewe
+                    
+                </li>
+            
+                <li>
+                    
+                        DM
+                    
+                </li>
+            
+                <li>
+                    
+                        Müller
+                    
+                </li>
+            
+            </ul>
+        </article>
+    
+        <article class="[ gr-auto ] product">
+            <h3>Lomo Life Book</h3>
+            <header class="product-img ">
+            
+                <img src="img/lomo-life-book.png" />
+            
+            </header>
+            <p class="text-xs buy-at">Zu kaufen bei:</p>
+            <ul>
+            
+                <li>
+                    
+                        <a href="https://shop.lomography.com/de/lomo-life-book" title="Bei Lomography kaufen">Lomography</a>
+                    
+                </li>
             
             </ul>
         </article>

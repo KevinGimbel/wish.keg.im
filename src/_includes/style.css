@@ -1,6 +1,8 @@
 :root {
     --stack-spacing: 2rem;
     --color-accent: #34d399;
+    --color-accent-light: #d1fae5;
+    --color-accent-dark: #064e3b;
     --color-accent-contrast: #f472b6;
     --color-accent-contrast-light: #fce7f3;
 }
@@ -69,18 +71,25 @@ li a {
 }
 
 .product-img {
-    width: 15rem;
     height: 15rem;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    margin: 1rem;
 }
 
 .product-img img {
     max-width: 100%;
     max-height: 100%;
     display: block;
+}
+
+.product-img.no-img {
+    background: var(--color-accent-light);
+    color: var(--color-accent-dark);
+    font-family: monospace;
+    font-weight: bold;
 }
 
 .footer {
@@ -100,10 +109,34 @@ li a {
 
 .main-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 1em;
     min-height: 100vh;
     padding: 1rem;
+}
+
+@media all and (min-width: 50rem) {
+    .main-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (min-width: 70rem) {
+    .main-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media all and (min-width: 80rem) {
+    .main-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media all and (min-width: 91rem) {
+    .main-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
 
 .gr-auto {

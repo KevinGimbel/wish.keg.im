@@ -4,15 +4,23 @@
     {% for item in wishlist %}
         <article class="[ gr-auto ] product">
             <h3>{{ item.name }}</h3>
+            <header class="product-img {% if not item.image %}no-img{% endif %}">
             {% if item.image %}
-            <header class="product-img">
                 <img src="{{ item.image }}" />
-            </header>
+            {% else %}
+                <div class="img-block">[ No Image ]</div>
             {% endif %}
+            </header>
             <p class="text-xs buy-at">Zu kaufen bei:</p>
             <ul>
             {% for shop in item.buy_at %}
-                <li><a href="{{ shop.link }}" title="Bei {{ shop.vendor }} kaufen">{{ shop.vendor }}</a></li>
+                <li>
+                    {% if shop.link %}
+                        <a href="{{ shop.link }}" title="Bei {{ shop.vendor }} kaufen">{{ shop.vendor }}</a>
+                    {% else %}
+                        {{ shop.vendor }}
+                    {% endif %}
+                </li>
             {% endfor %}
             </ul>
         </article>

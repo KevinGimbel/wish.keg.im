@@ -1,7 +1,10 @@
 module.exports = [
     {
         name: "ADOX Foto Termometer",
-        image: "img/adox-thermometer.jpeg",
+        image: {
+            src: "img/adox-thermometer.jpeg",
+            copyright: "Fotoimpex"
+        },
         buy_at: [
             {
                 vendor: "Fotoimpex",
@@ -10,7 +13,10 @@ module.exports = [
         ]
     }, {
         name: "Kodak Pro Image 100 (5 Pack)",
-        image: "img/kodak-pro-img.jpeg",
+        image: {
+            src: "img/kodak-pro-img.jpeg",
+            copyright: "Fotoimpex"
+        },
         buy_at: [
             {
                 vendor: "Fotoimpex",
@@ -19,7 +25,10 @@ module.exports = [
         ]
     }, {
         name: "KAISER Faltflasche (1L)",
-        image: "img/kaiser-flasche.jpeg",
+        image: {
+            src: "img/kaiser-flasche.jpeg",
+            copyright: "Fotoimpex"
+        },
         buy_at: [
             {
                 vendor: "Fotoimpex",
@@ -28,7 +37,10 @@ module.exports = [
         ]
     }, {
         name: "KAISER Film Clips",
-        image: "img/kaiser-filmclip.jpeg",
+        image: {
+            src: "img/kaiser-filmclip.jpeg",
+            copyright: "Fotoimpex"
+        },
         buy_at: [
             {
                 vendor: "Fotoimpex",
@@ -37,7 +49,10 @@ module.exports = [
         ]
     }, {
         name: "KAISER Film Wiper",
-        image: "img/film-wiper.jpeg",
+        image: {
+            src: "img/film-wiper.jpeg",
+            copyright: "Fotoimpex"
+        },
         buy_at: [
             {
                 vendor: "Fotoimpex",
@@ -46,7 +61,10 @@ module.exports = [
         ]
     }, {
         name: "AP Film Retriever",
-        image: "img/AP_Filmrueckholer_2.jpg",
+        image: {
+            src: "img/AP_Filmrueckholer_2.jpg",
+            copyright: "Fotoimpex"
+        },
         buy_at: [
             {
                 vendor: "Fotoimpex",
@@ -55,7 +73,10 @@ module.exports = [
         ]
     }, {
         name: "CINESTILL CS-Lite",
-        image: "img/cs-lite.jpeg",
+        image: {
+            src: "img/cs-lite.jpeg",
+            copyright: "Fotoimpex"
+        },
         buy_at: [
             {
                 vendor: "Fotoimpex",
@@ -64,7 +85,10 @@ module.exports = [
         ]
     }, {
         name: "PATERSON Developing Tank",
-        image: "img/Paterson_Multi_Tank2.jpg",
+        image: {
+            src: "img/Paterson_Multi_Tank2.jpg",
+            copyright: "Fotoimpex"
+        },
         buy_at: [
             {
                 vendor: "Fotoimpex",
@@ -73,7 +97,10 @@ module.exports = [
         ]
     }, {
         name: "CINESTILL Cs41 Entwickler",
-        image: "img/cs-c41.jpeg",
+        image: {
+            src: "img/cs-c41.jpeg",
+            copyright: "Fotoimpex"
+        },
         buy_at: [
             {
                 vendor: "Fotoimpex",
@@ -91,7 +118,10 @@ module.exports = [
         ]
     }, {
         name: "Agfa APX 100",
-        image: "img/apx100.jpeg",
+        image: {
+            src: "img/apx100.jpeg",
+            copyright: "Fotoimpex"
+        },
         buy_at: [
             {
                 vendor: "Fotoimpex",
@@ -120,7 +150,10 @@ module.exports = [
     },
     {
         name: "Lomo Life Book",
-        image: "img/lomo-life-book.png",
+        image: {
+            src: "img/lomo-life-book.png",
+            copyright: "Lomography"
+        },
         buy_at: [
             {
                 vendor: "Lomography",

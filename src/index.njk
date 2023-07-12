@@ -6,7 +6,10 @@
             <h3>{{ item.name }}</h3>
             <header class="product-img {% if not item.image %}no-img{% endif %}">
             {% if item.image %}
-                <img src="{{ item.image }}" />
+                <figure>
+                    <img src="{{ item.image.src }}" />
+                    <figcaption class="text-xs">Bild via {{ item.image.copyright }}</figcaption>
+                </figure>
             {% else %}
                 <div class="img-block">[ No Image ]</div>
             {% endif %}

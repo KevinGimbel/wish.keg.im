@@ -161,6 +161,16 @@ module.exports = [
             }
         ]
     },
+    {
+        name: "Japanese Tales of Mystery and Imagination",
+        image: undefined,
+        buy_at: [
+            {
+                vendor: "Hugendubel",
+                link: "https://www.hugendubel.de/de/taschenbuch/edogawa_rampo-japanese_tales_of_mystery_and_imagination-16296442-produkt-details.html"
+            }
+        ]
+    },
     // {
     //     name: "",
     //     image: "",
